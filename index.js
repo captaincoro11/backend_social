@@ -2,7 +2,12 @@ const express = require ('express');
 const cookieParser = require('cookie-parser')
 const app = express();
 const cors = require('cors');
+const config = {
 
+    origin:"*",
+    credential:true,
+    methods:["GET","PUT","DELETE","POST"]
+}
 
 app.use(cors())
 
